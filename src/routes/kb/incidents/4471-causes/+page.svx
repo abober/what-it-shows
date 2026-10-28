@@ -4,7 +4,7 @@ title: '#4471 holds two causes'
 owner: abober
 status: known
 reviewed: 2026-10-28
-signature: v1.eyJzdWIiOiIxMTAxIiwiYXVkIjoiY2hhbGxlbmdlOndoYXQtaXQtc2hvd3MiLCJpYXQiOjE3OTMxNzc3NjQsImV4cCI6MTc5MzI2NDE2NH0.XjaBZu7cbdYKlqV60X7Ghuhsunog8NLjwe2xIgNeuHg
+signature: v1.eyJzdWIiOiIxMTAxIiwiYXVkIjoiY2hhbGxlbmdlOndoYXQtaXQtc2hvd3MiLCJpYXQiOjE3OTMxOTM5MTIsImV4cCI6MTc5MzI4MDMxMn0.KToesR0nDJ3Szzkc1dqpruCSTZp8Mip0Y8weOWPR49M
 ---
 
 <script>
@@ -12,7 +12,7 @@ signature: v1.eyJzdWIiOiIxMTAxIiwiYXVkIjoiY2hhbGxlbmdlOndoYXQtaXQtc2hvd3MiLCJpYX
   import Callout from '#lib/kb/Callout.svelte';
   import RenderStamp from '#lib/kb/RenderStamp.svelte';
 
-  const signature = 'v1.eyJzdWIiOiIxMTAxIiwiYXVkIjoiY2hhbGxlbmdlOndoYXQtaXQtc2hvd3MiLCJpYXQiOjE3OTMxNzc3NjQsImV4cCI6MTc5MzI2NDE2NH0.XjaBZu7cbdYKlqV60X7Ghuhsunog8NLjwe2xIgNeuHg';
+  const signature = 'v1.eyJzdWIiOiIxMTAxIiwiYXVkIjoiY2hhbGxlbmdlOndoYXQtaXQtc2hvd3MiLCJpYXQiOjE3OTMxOTM5MTIsImV4cCI6MTc5MzI4MDMxMn0.KToesR0nDJ3Szzkc1dqpruCSTZp8Mip0Y8weOWPR49M';
 </script>
 
 The desk merged the reports into #4471 and marked that ticket known, as one parser bug. The cause is not the subject line. It depends on the tenant, and on which booking form they run. The table is built from the export at render time.
