@@ -4,7 +4,7 @@ title: '#4471 holds two causes'
 owner: abober
 status: open
 reviewed: 2026-10-28
-signature: abober
+signature: v1.eyJzdWIiOiIxMTAxIiwiYXVkIjoiY2hhbGxlbmdlOndoYXQtaXQtc2hvd3MiLCJpYXQiOjE3OTMxNzc3NjQsImV4cCI6MTc5MzI2NDE2NH0.XjaBZu7cbdYKlqV60X7Ghuhsunog8NLjwe2xIgNeuHg
 ---
 
 <script>
@@ -12,7 +12,7 @@ signature: abober
   import Callout from '#lib/kb/Callout.svelte';
   import RenderStamp from '#lib/kb/RenderStamp.svelte';
 
-  const signature = 'abober';
+  const signature = 'v1.eyJzdWIiOiIxMTAxIiwiYXVkIjoiY2hhbGxlbmdlOndoYXQtaXQtc2hvd3MiLCJpYXQiOjE3OTMxNzc3NjQsImV4cCI6MTc5MzI2NDE2NH0.XjaBZu7cbdYKlqV60X7Ghuhsunog8NLjwe2xIgNeuHg';
 </script>
 
 The desk merged the reports into #4471 and marked that ticket known, as one parser bug. The cause is not the subject line. It depends on the tenant, and on which booking form they run. The table is built from the export at render time.

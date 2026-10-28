@@ -48,12 +48,13 @@
     </header>
     <main>
       <p>The desk merged the reports into #4471 and marked that ticket known, as one parser bug. The cause is not the subject line. It depends on the tenant, and on which booking form they run. The table is built from the export at render time.</p>
-      <p class="sum"><strong>412</strong> reports merged into #4471 · <strong>2</strong> causes</p>
+      <p class="sum"><!--sum--><strong>412</strong> reports merged into #4471 · <strong>2</strong> causes<!--/sum--></p>
       <table>
         <thead>
           <tr><th>cause</th><th>reports</th><th>tagged as</th><th>tenants</th><th>seen</th><th></th></tr>
         </thead>
         <tbody>
+          <!--rows-->
           <tr>
             <td><code>parser</code></td>
             <td>379</td>
@@ -70,13 +71,14 @@
             <td>2026-04-17 → 2026-09-22</td>
             <td>not this ticket — no ticket of its own</td>
           </tr>
+          <!--/rows-->
         </tbody>
       </table>
-      <p class="note">5 reports read as a one-day move; filed under <code>parser</code> by tenant.</p>
+      <!--note--><p class="note">5 reports read as a one-day move; filed under <code>parser</code> by tenant.</p><!--/note-->
       <aside>
         The larger cause is the shared parser. It reads every date month first, so a day-first tenant's dates come out flipped. The smaller cause is the booking-v3 hint. That form prints MM/DD/YYYY, the tenant writes the day first, and people type what the hint tells them. The form then reads the date the tenant's way. Those reports were merged into #4471 and have no ticket of their own.
       </aside>
-      <p class="stamp">desk ref <b>DR-A91Z-NF6G</b></p>
+      <p class="stamp">desk ref <b>DR-CGEG-ZNA9</b></p>
     </main>
     <footer>Pages are written by people. Tables and charts are built from data at render time.</footer>
   </div>
