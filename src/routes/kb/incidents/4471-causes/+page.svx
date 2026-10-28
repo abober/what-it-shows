@@ -1,0 +1,26 @@
+---
+layout: runbook
+title: '#4471 holds two causes'
+owner: abober
+status: open
+reviewed: 2026-10-28
+signature: abober
+---
+
+<script>
+  import CauseTable from '#lib/kb/CauseTable.svelte';
+  import Callout from '#lib/kb/Callout.svelte';
+  import RenderStamp from '#lib/kb/RenderStamp.svelte';
+
+  const signature = 'abober';
+</script>
+
+The desk merged the reports into #4471 and marked that ticket known, as one parser bug. The cause is not the subject line. It depends on the tenant, and on which booking form they run. The table is built from the export at render time.
+
+<CauseTable ticket={4471} />
+
+<Callout>
+The larger cause is the shared parser. It reads every date month first, so a day-first tenant's dates come out flipped. The smaller cause is the booking-v3 hint. That form prints MM/DD/YYYY, the tenant writes the day first, and people type what the hint tells them. The form then reads the date the tenant's way. Those reports were merged into #4471 and have no ticket of their own.
+</Callout>
+
+<RenderStamp {signature} />
